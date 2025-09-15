@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.AI;
 
 namespace Game
 {
@@ -10,6 +11,16 @@ namespace Game
 		#region Control
 		[SerializeField][Range(0, 10)] float moveSpeed = 3.0f;
 		Vector3 bufferMovementInput = default;
+
+		void MoveContrained(Vector3 targetPos)
+		{
+			// Limit the player's position on movable areas.
+			if(!NavMesh.SamplePosition(targetPos, out var hit, 5f, 1))
+				return;
+			targetPos = hit.position;
+
+			Controller.Move(targetPos - transform.position);
+		}
 
 		[SerializeField][Range(0, 1)] float orientSpeed = 1.0f;
 		float Azimuth
@@ -59,10 +70,14 @@ namespace Game
 			Cursor.lockState = CursorLockMode.None;
 		}
 
-		void Update()
+		void FixedUpdate()
 		{
-			Vector3 world = transform.localToWorldMatrix.MultiplyVector(bufferMovementInput).normalized * moveSpeed;
-			Controller.SimpleMove(world);
+			float dt = Time.fixedDeltaTime;
+			if(bufferMovementInput.sqrMagnitude > 0.1f)
+			{
+				Vector3 worldVelocity = transform.localToWorldMatrix.MultiplyVector(bufferMovementInput).normalized * moveSpeed;
+				MoveContrained(transform.position + worldVelocity * dt);
+			}
 		}
 		#endregion
 
