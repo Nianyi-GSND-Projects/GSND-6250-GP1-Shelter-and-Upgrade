@@ -3940,7 +3940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftJoint: {fileID: 5801380655299950560}
   rightJoint: {fileID: 7385976355283165747}
-  isOpen: 1
+  isOpen: 0
   leftRange: {x: 30, y: 120}
   rightRange: {x: 10, y: -80}
 --- !u!114 &1157333480934018497
@@ -3956,7 +3956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Open/Close Gate
-  oneTime: 1
+  oneTime: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -7707,6 +7707,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d42de9df1478104c962cc7fd48cadfa, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 6149974588828080795}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d42de9df1478104c962cc7fd48cadfa, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 7000781578462605941}
   m_SourcePrefab: {fileID: 100100000, guid: 7d42de9df1478104c962cc7fd48cadfa, type: 3}
 --- !u!4 &371543501479993156 stripped
@@ -7719,6 +7722,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d42de9df1478104c962cc7fd48cadfa, type: 3}
   m_PrefabInstance: {fileID: 192886937892993199}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6149974588828080795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039254490791904766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab91522929670b4d97703a061e1144f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgraded: {fileID: 758518014038141164}
 --- !u!114 &7000781578462605941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7736,10 +7752,10 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1039254490791904766}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 6149974588828080795}
+        m_TargetAssemblyTypeName: Game.Upgradable, Assembly-CSharp
+        m_MethodName: Upgrade
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7747,18 +7763,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 758518014038141164}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1001 &452512585489012157
 PrefabInstance:
@@ -7827,10 +7831,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 042c92f0fab24f74a990a7b485a43504, type: 3}
       propertyPath: m_Name
       value: Chest
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 042c92f0fab24f74a990a7b485a43504, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8376,10 +8376,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6721018502c54944fa1fa3291026a601, type: 3}
       propertyPath: m_Name
       value: Tent
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 6721018502c54944fa1fa3291026a601, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6721018502c54944fa1fa3291026a601, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9458,10 +9454,6 @@ PrefabInstance:
       value: Workspace Table (upgraded)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2e64a14a2dc18274e941219516ddef99, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2e64a14a2dc18274e941219516ddef99, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -9649,6 +9641,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8513b4683274895478012a09a4f66b0b, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 2663977559359266566}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8513b4683274895478012a09a4f66b0b, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 706717295248288915}
   m_SourcePrefab: {fileID: 100100000, guid: 8513b4683274895478012a09a4f66b0b, type: 3}
 --- !u!4 &7171396510604033901 stripped
@@ -9661,6 +9656,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8513b4683274895478012a09a4f66b0b, type: 3}
   m_PrefabInstance: {fileID: 7210072083680336006}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2663977559359266566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7552039105894753751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab91522929670b4d97703a061e1144f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgraded: {fileID: 7989034900352692550}
 --- !u!114 &706717295248288915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9678,10 +9686,10 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7552039105894753751}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2663977559359266566}
+        m_TargetAssemblyTypeName: Game.Upgradable, Assembly-CSharp
+        m_MethodName: Upgrade
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9689,18 +9697,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7989034900352692550}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1001 &7425696901856086608
 PrefabInstance:
@@ -10048,6 +10044,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9de9958164e68024db2e0dfc84ccd4e7, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 8577143600230946405}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9de9958164e68024db2e0dfc84ccd4e7, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 8405482114879460327}
   m_SourcePrefab: {fileID: 100100000, guid: 9de9958164e68024db2e0dfc84ccd4e7, type: 3}
 --- !u!4 &8073075792273687252 stripped
@@ -10060,6 +10059,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9de9958164e68024db2e0dfc84ccd4e7, type: 3}
   m_PrefabInstance: {fileID: 8611985115259217215}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8577143600230946405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8881805469974730862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab91522929670b4d97703a061e1144f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgraded: {fileID: 3322403032862399873}
 --- !u!114 &8405482114879460327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10077,10 +10089,10 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8881805469974730862}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 8577143600230946405}
+        m_TargetAssemblyTypeName: Game.Upgradable, Assembly-CSharp
+        m_MethodName: Upgrade
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10088,18 +10100,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 3322403032862399873}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1001 &8876260398905359052
 PrefabInstance:
