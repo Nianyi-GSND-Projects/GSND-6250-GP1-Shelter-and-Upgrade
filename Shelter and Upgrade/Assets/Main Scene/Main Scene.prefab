@@ -6651,7 +6651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Open/Close Gate
-  oneTime: 0
+  oneTime: 1
   onInteract:
     m_PersistentCalls:
       m_Calls:
