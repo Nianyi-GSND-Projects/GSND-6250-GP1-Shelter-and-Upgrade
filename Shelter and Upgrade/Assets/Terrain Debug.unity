@@ -231,6 +231,57 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2210fe56d27a4dd469c3ea870541bd93, type: 3}
+--- !u!1 &899869601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8881805469974730862, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+  m_PrefabInstance: {fileID: 5427416188879201948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &899869605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899869601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d03182667d6bf44b3192a48006ada6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Upgrade Sleeping Bag
+  oneTime: 1
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 899869601}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1328283801}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!1 &1328283801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3322403032862399873, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+  m_PrefabInstance: {fileID: 5427416188879201948}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2088565104
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +408,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3322403032862399873, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4133972645133299206, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -397,6 +452,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7171396510604033901, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.73905
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171396510604033901, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6519184
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171396510604033901, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171396510604033901, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171396510604033901, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.31270176
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171396510604033901, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.94985133
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171396510604033901, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -216.444
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171396510604033901, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552039105894753751, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      propertyPath: m_Name
+      value: Workspace Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073075792273687252, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073075792273687252, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.56
+      objectReference: {fileID: 0}
     - target: {fileID: 9212056994413137929, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
       propertyPath: m_Name
       value: Main Scene
@@ -404,7 +503,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8881805469974730862, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 899869605}
   m_SourcePrefab: {fileID: 100100000, guid: 7d67e77989679c848ac57c5915a13093, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
