@@ -25,13 +25,12 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - EFFECT_HUE_VARIATION
-  - GEOM_TYPE_LEAF
+  - GEOM_TYPE_BRANCH
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
+  m_CustomRenderQueue: 2000
   stringTagMap:
     RenderType: TreeTransparentCutout
   disabledShaderPasses: []
@@ -108,7 +107,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _Cull: 0
+    - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
@@ -136,6 +135,6 @@ Material:
     - _BaseColor: {r: 0.011152952, g: 0.533, b: 0.0050282185, a: 1}
     - _Color: {r: 0.011152952, g: 0.533, b: 0.0050282185, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
+    - _HueVariation: {r: 0.011764706, g: 0.53333336, b: 0.003921569, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

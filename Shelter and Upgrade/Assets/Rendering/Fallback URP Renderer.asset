@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: Depth Fog
   m_EditorClassIdentifier: 
   m_Active: 1
-  injectionPoint: 600
+  injectionPoint: 450
   fetchColorBuffer: 1
   requirements: 0
   passMaterial: {fileID: 2100000, guid: ec89654095d3ba14c853e9881ef0b0a7, type: 2}
