@@ -98,8 +98,15 @@ namespace Game
 		protected void OnInputOrientDelta(InputValue value)
 		{
 			var raw = value.Get<Vector2>();
-			Azimuth += raw.x * orientSpeed;
-			Zenith += raw.y * orientSpeed;
+			Azimuth = Azimuth + raw.x * orientSpeed;
+			float zenith = Zenith + raw.y * orientSpeed;
+			if(zenith < 0)
+				zenith += 360;
+			if(zenith < 180)
+				zenith = Mathf.Clamp(zenith, 0, 90);
+			else
+				zenith = Mathf.Clamp(zenith, 270, 360);
+			Zenith = zenith;
 		}
 		#endregion
 
