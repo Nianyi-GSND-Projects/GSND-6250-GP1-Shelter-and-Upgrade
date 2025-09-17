@@ -1,21 +1,11 @@
 fileFormatVersion: 2
-guid: ae3d58575369dab4bab4410737a89de2
+guid: d26bcffbb95f5f841a3535ef9b67bf6f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sign
-    second: {fileID: 2100000, guid: e78ce1706d037724ca7bb617c80c347a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Stick
-    second: {fileID: 2100000, guid: 74ea09429cbfd8f4b937ef879328041f, type: 2}
+  externalObjects: {}
   materials:
-    materialImportMode: 2
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

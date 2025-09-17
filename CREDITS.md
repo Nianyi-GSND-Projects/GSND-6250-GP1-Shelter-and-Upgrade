@@ -19,3 +19,6 @@ None of them are functional, and most of them are for implementing the designed 
 	Used as... you guessed it, the moon.
 - `Mouse_Left_Key_Light.png` by Xelu in their "Free Controller & Key Prompts", downloaded long long ago.
 	Used as an interaction indicator icon.
+- `oak-bark-tree-bark-bark-backgrounds-textures-f91157-1024.jpg` from Pixabay, downloaded at `https://picryl.com/media/oak-bark-tree-bark-bark-backgrounds-textures-f91157`.
+- `wooden_planks_new_texture_03_by_simoonmurray_d2nevt1-fullview.jpg` by user 
+SimoonMurray on DeviantArt, downloaded at `https://www.deviantart.com/simoonmurray/art/Wooden-Planks-New-Texture-03-160257925`.
