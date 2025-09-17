@@ -14,5 +14,8 @@ None of them are functional, and most of them are for implementing the designed 
 - `Seamless Dirt Ground texture.jpg` by user hhh316 on DeviantArt, downloaded at `https://www.deviantart.com/hhh316/art/Seamless-Dirt-Ground-texture-268208528`.
 	Used as dirt ground texture.
 - `Seamless mountain rock.jpg` by user hhh316 on DeviantArt, downloaded at `https://www.deviantart.com/hhh316/art/Seamless-mountain-rock-183926178`.
-	Used as dirt ground texture.
+	Used as mountain rock texture.
 - `Moon_texture.jpg` by NASA, downloaded at `https://commons.wikimedia.org/wiki/File:Moon_texture.jpg`.
+	Used as... you guessed it, the moon.
+- `Mouse_Left_Key_Light.png` by Xelu in their "Free Controller & Key Prompts", downloaded long long ago.
+	Used as an interaction indicator icon.
