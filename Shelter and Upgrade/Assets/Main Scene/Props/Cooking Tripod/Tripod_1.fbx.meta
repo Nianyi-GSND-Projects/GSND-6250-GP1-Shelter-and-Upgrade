@@ -3,7 +3,27 @@ guid: 452ed6bbdaf3d8948b3db5f5971c58f2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Maya_Phong6
+    second: {fileID: 2100000, guid: 70971caa3e63856499c5e381b6e3618f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Maya_Phong7
+    second: {fileID: 2100000, guid: bd651b16319a17546adfa6d4b8c43917, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Maya_Phong8
+    second: {fileID: 2100000, guid: bd651b16319a17546adfa6d4b8c43917, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface1
+    second: {fileID: 2100000, guid: bd651b16319a17546adfa6d4b8c43917, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
