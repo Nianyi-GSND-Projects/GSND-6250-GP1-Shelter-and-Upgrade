@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5573014996157457643}
   - component: {fileID: 385566191901706270}
   - component: {fileID: 4888016396071301344}
-  m_Layer: 1
-  m_Name: Firefly Particle Light
+  m_Layer: 0
+  m_Name: Fire Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,9 +44,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.60391194, g: 0.94791824, b: 0.9748427, a: 1}
-  m_Intensity: 0.5
-  m_Range: 10
+  m_Color: {r: 1, g: 0.73051953, b: 0.5, a: 1}
+  m_Intensity: 1
+  m_Range: 30
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections;
 
 namespace Game
 {
@@ -7,13 +8,20 @@ namespace Game
 	{
 		public string text;
 		[SerializeField] bool oneTime;
+		[SerializeField][Min(0)] float delay = 0;
 		[SerializeField] UnityEvent onInteract;
 
 		public void Interact()
 		{
-			onInteract?.Invoke();
 			if(oneTime)
 				enabled = false;
+			StartCoroutine(nameof(InteractCoroutine));
+		}
+
+		IEnumerator InteractCoroutine()
+		{
+			yield return new WaitForSeconds(delay);
+			onInteract?.Invoke();
 		}
 	}
 }

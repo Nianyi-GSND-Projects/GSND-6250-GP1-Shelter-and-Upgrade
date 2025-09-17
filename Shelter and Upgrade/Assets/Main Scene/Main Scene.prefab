@@ -3853,6 +3853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Open/Close Gate
   oneTime: 0
+  delay: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -5509,6 +5510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Build Cooking Tripod
   oneTime: 1
+  delay: 0.1
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -7605,6 +7607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Upgrade Stuff Pile
   oneTime: 1
+  delay: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -8764,7 +8767,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6540682916193195683, guid: e2ef5a2186feced4292bf1a764664b05, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3620790118427057583}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ef5a2186feced4292bf1a764664b05, type: 3}
 --- !u!4 &1586350554405625181 stripped
@@ -9882,6 +9888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Upgrade Sleeping Bag
   oneTime: 1
+  delay: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -10048,6 +10055,72 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7786130411374874912, guid: b69a0e8d0e17a4d4ea58985386239ec3, type: 3}
   m_PrefabInstance: {fileID: 7638516734402860716}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7695589642364585784
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1586350554405625181}
+    m_Modifications:
+    - target: {fileID: 3262394232423683357, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+      propertyPath: m_Name
+      value: Poof Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 5362777624565164902, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+      propertyPath: radius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409637584804764311, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.000000020489097
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409637584804764311, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7500001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409637584804764311, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0000000037252903
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409637584804764311, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409637584804764311, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409637584804764311, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409637584804764311, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409637584804764311, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409637584804764311, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409637584804764311, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+--- !u!4 &3620790118427057583 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6409637584804764311, guid: d4cddf48a56d2a14cb23000149742473, type: 3}
+  m_PrefabInstance: {fileID: 7695589642364585784}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7737195016218031478
 PrefabInstance:
@@ -10347,6 +10420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Upgrade Sleeping Bag
   oneTime: 1
+  delay: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
